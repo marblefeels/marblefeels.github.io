@@ -3,32 +3,67 @@
     portofolio site 
    </title>
   
-  <center>
-  <body bgcolor = "blue" size = "10">
-    
-    <p>  
-      hi everyone this is not  madan gowri  
-    </p>
-    
-      <font color = "red">
-      <p>
-        This is marblefeels 
-      </p>
-      </font>
-   
+  <body>
+  <div id="container">
+    <section id="one">one</section>
+    <section id="two">two</section>
+    <section id="three">threeeee</section>
+    <section id="four">and so on</section>
+  </div>
   
-  </body>
-  
-     
-  <button>
-  <font color ="violet">
-    <p>
-      <a href="https://marblefeels.github.io/anotherfile.html" target = "blank">
-        click
-      </a>
-    </p>
-   </font>
-  </button>
-  </center>
+  <!-- CSS below -->
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      position: relative;
+      width: 100%;
+    }
+
+    .section-content,
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    section {
+      overflow: hidden;
+      min-height: 100vh;
+      justify-content: center;
+    }
+
+    #container,
+    section {
+      position: relative;
+      width: 100%;
+    }
+
+    #one {
+      background-image: url("https://sadhost.neocities.org/images/tiles/pastelblue.png");
+    }
+
+    #two {
+      background-image: url("https://sadhost.neocities.org/images/tiles/water.png");
+    }
+
+    #three {
+      background-image: url("https://sadhost.neocities.org/images/tiles/butterflysparkle.gif");
+    }
+
+    #four {
+      background-image: url("https://sadhost.neocities.org/images/tiles/bubbles.gif");
+    }
+
+    section {
+      font-size: 120px;
+    }
+  </style>
+</body>
 </html>
       
