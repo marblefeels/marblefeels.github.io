@@ -35,18 +35,18 @@
                         </ul>
                     </div>
                     <h2>Hi there!</h2>
-                    <p>Do you have a suggestion for a feature? Some criticism about the tool or something that confused you? Let me know! sadgrl[at]riseup.net</p>
-                    <h3>Other Tools</h3>
+                    <p> Suggestions/ tips for improvement welcome! at1anugithub@tuta.io </p>
+                    <h3>Other Tools</h32
                     <ul>
-                        <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a>
-                        </li><li><a href="https://sadgrl.online/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
-                        <li><a href="https://sadgrl.online/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
-                        <li><a href="https://sadgrl.online/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
-                        <li><a href="https://sadgrl.online/projects/ideas/" target="_blank">Site Ideas</a></li>
+                        <li><a href="#" target="_blank">Outside_link_1</a>
+                        </li<a href="#" target="_blank">Outside_link_2</a></li>
+                        <li><a href="#" target="_blank">Outside_link_3</a></li>
+                        <li><a href="#" target="_blank">Outside_link_4</a></li>
+                        <li><a href="#" target="_blank">Outside_link_5</a></li>
                     </ul>
                 </aside>
                 <main>
-                    <h1>Welcome to my Layout Maker!</h1>
+                    <h1>Welcome to my Website!</h1>
                     <p><strong>Please read this first!</strong></p>
                     <p>This tool generates a layout that is responsive, which means it looks great on phones! Use dropdowns above to customize your layout's general features. Click the button to generate your HTML and CSS, and paste it into a file on Neocities.</p>
                     <p>Then you can replace all of the text with your own. For more customization, the CSS code has comments to explain what each part changes. Please read through the code - even if you have no idea what it means.</p>
@@ -71,11 +71,7 @@
 html {
   		scroll-behavior: smooth;
 	}
-            /* styles are what change the color and sizes of stuff on your site. */
-
-            /* these are variables that are being used in the code
-    these tended to confuse some people, so I only kept 
-    the images as variables */
+            /* Images only kept as variables */
 
             :root {
                 --header-image: url('https://wallup.net/wp-content/uploads/2016/01/316346-simple_background-simple-space-astronaut-flag-748x425.jpg');
@@ -85,16 +81,8 @@ html {
                 --content: #BEBEBE;
             }
 
-            /* if you have the URL of a font, you can set it below */
-            /* feel free to delete this if it's not your vibe */
-
-            /* this seems like a lot for just one font and I would have to agree 
-    but I wanted to include an example of how to include a custom font.
-    If you download a font file you can upload it onto your Neocities*/
-   /* and then link it! Many fonts have separate files for each style
-    (bold, italic, etc. T_T) which is why there are so many!
-    
-    */
+           
+            /* fonts */
 
             @font-face {
                 font-family: Nunito;
@@ -134,36 +122,28 @@ html {
                 box-sizing: border-box;
             }
 
-            /* below this line is CSS for the layout */
+            /*  CSS for the layout */
 
-            /* this is a CSS comment
-    to uncomment a line of CSS, remove the * and the /
-    before and after the text */
+            
 
-
-            /* the "container" is what wraps your entire website */
-            /* if you want something (like the header) to be Wider than
-    the other elements, you will need to move that div outside
-    of the container */
-             #container{
+            /* the "container" is what wraps the entire website */
+            
+		#container{
                 max-width: 900px;
 	    
 
-                /* this is the width of your layout ! 
-                 if you change the above value, scroll to the bottom
+                /* this is the width of the layout */ 
+                 /* to change the above value, scroll to the bottom
       and change the media query according to the comment! */
                 margin: 0 auto;
                 /* this centers the entire page */
 	     }
 
-            /* the area below is for all links on your page
-    EXCEPT for the navigation */
+            /* the area below is for all links on the website EXCEPT for the navigation */
             #container a {
      	         background: transparent;
                 font-weight: bold;
-                /* if you want to remove the underline
-      you can add a line below here that says:
-      text-decoration:none; */
+                /* if you want to remove the underline use text-decoration:none; */
             }
 
             #header {
@@ -171,9 +151,6 @@ html {
                 background-color: #5e4e8c;
                 /* header color here! */
                 height: 250px;
-                /* this is only for a background image! */
-                /* if you want to put images IN the header, 
-      you can add them directly to the <div id="header"></div> element! */
                 background-image: var(--header-image);
 		background-size:;
 	    }
@@ -220,8 +197,8 @@ html {
             }
 
             /* this colors BOTH sidebars
-    if you want to style them separately,
-    create styles for #leftSidebar and #rightSidebar */
+    create styles for #leftSidebar and #rightSidebar 
+		to style them separately */
             aside {
                 background-color: #241445;
                 width: 200px;
@@ -232,7 +209,7 @@ html {
 
 
             /* this is the color of the main content area,
-    between the sidebars! */
+    after the sidebar*/
             main {
                 background-color: #000000;
                 flex: 1;
@@ -241,13 +218,7 @@ html {
                 order: 2;
             }
 
-            /* what's this "order" stuff about??
-    allow me to explain!
-    if you're using both sidebars, the "order" value
-    tells the CSS the order in which to display them.
-    left sidebar is 1, content is 2, and right sidebar is 3! */
-
-            */ #leftSidebar {
+            #leftSidebar {
                 order: 1;
             }
 
@@ -300,12 +271,7 @@ html {
 
             /* BELOW THIS POINT IS MEDIA QUERY */
 
-            /* so you wanna change the width of your page? 
-    by default, the container width is 900px.
-    in order to keep things responsive, take your new height,
-    and then subtrack it by 100. use this new number as the 
-    "max-width" value below
-    */
+           /* used if maximum width is to be changed */
 
             @media only screen and (max-width: 800px) {
                 #flex {
@@ -316,10 +282,6 @@ html {
                     width: 100%;
                 }
 
-                /* the order of the items is adjusted here for responsiveness!
-      since the sidebars would be too small on a mobile device.
-      feel free to play around with the order!
-      */
                 main {
                     order: 1;
                 }
@@ -338,17 +300,6 @@ html {
             }
         </style>
 
-    <script>
-function w3_open() {
-  document.getElementById("leftSidebar").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("leftSidebar").style.display = "none";
-}
-</script>
-
-                
     
   </body>
 </html>
