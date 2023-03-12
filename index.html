@@ -9,15 +9,76 @@
   <div id="container"><div id="header" style="height: 432px;" ></div>
             <div id="headerArea">
  
-            <nav id="navbar"><ul>
 
-			    <li><button style ="background-color:black"><a href="#leftSidebar">Sidebar</a></button></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-              </ul></nav></div>
+		    
+           <nav id="main-nav">
+    <ul id="nav-primary">
+        <li><a href="#">Menu 1</a>
+
+            <ul class="subnav">
+                <li><a href="#">Lorem Ipsum Dolor</a>
+                </li>
+                <li><a href="#">Ham cow meatball pork chop</a>
+                </li>
+                <li><a href="#">Lorem Ipsum Dolor</a>
+                </li>
+                <li><a href="#">Ham cow meatball pork chop</a>
+                </li>
+                <li><a href="#">Lorem Ipsum Dolor</a>
+                </li>
+                <li><a href="#">Ham cow meatball pork chop</a>
+                </li>
+                <li><a href="#">Lorem Ipsum Dolor</a>
+                </li>
+                <li><a href="#">Ham cow meatball pork chop</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Menu 2</a>
+
+            <ul class="subnav">
+                <li><a href="#">Lorem Ipsum Dolor</a>
+                </li>
+                <li><a href="#">Ham cow meatball pork chop</a>
+                </li>
+                <li><a href="#">Lorem Ipsum Dolor</a>
+                </li>
+                <li><a href="#">Ham cow meatball pork chop</a>
+                </li>
+                <li><a href="#">Lorem Ipsum Dolor</a>
+                </li>
+                <li><a href="#">Ham cow meatball pork chop</a>
+                </li>
+                <li><a href="#">Lorem Ipsum Dolor</a>
+                </li>
+                <li><a href="#">Ham cow meatball pork chop</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Menu 3</a>
+
+            <ul class="subnav">
+                <li><a href="#">Lorem Ipsum Dolor</a>
+                </li>
+                <li><a href="#">Ham cow meatball pork chop</a>
+                </li>
+                <li><a href="#">Lorem Ipsum Dolor</a>
+                </li>
+                <li><a href="#">Ham cow meatball pork chop</a>
+                </li>
+                <li><a href="#">Lorem Ipsum Dolor</a>
+                </li>
+                <li><a href="#">Ham cow meatball pork chop</a>
+                </li>
+                <li><a href="#">Lorem Ipsum Dolor</a>
+                </li>
+                <li><a href="#">Ham cow meatball pork chop</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+		    
 
             <div id="flex">
                 <aside id="leftSidebar">
@@ -168,26 +229,65 @@ html {
 	    }
 
             /* navigation section!! */
-            #navbar {
-                height: 40px;
-                background-color: #13092D;
-                /* navbar color */
-                width: 100%;
-            }
-
-            #navbar ul {
-                display: flex;
-                padding: 0;
-                margin: 0;
-                list-style-type: none;
-                justify-content: space-evenly;
-                background-image: var(--body-bg-image);
-	    	background-size: 45%;
-	    }
-
-            #navbar li {
-                padding-top: 10px;
-            }
+           #main-nav {
+    width: 100%;
+    height: 67px;
+    background: #f2f2f2;
+}
+#main-nav .subnav {
+    display: none;
+    position: absolute;
+    top: 67px;
+    left: 0px;
+    width: 100%;
+    list-style-type: none;
+    background: #fff;
+    margin: 0;
+    border:solid 1px #eeeeee;
+    z-index:5;
+    padding:0;
+}
+#main-nav .subnav li {
+    display: block;
+    border-bottom: solid 1px #eeeeee;
+    margin:0;
+}
+#main-nav .subnav li a {
+    color: #333;
+    height:18px;
+    padding:10px 0;
+    font-size:13px;
+}
+#main-nav .subnav li a:hover {
+    background:#f9f9f9;
+}
+#nav-primary {
+    list-style-type: none;
+    margin: 0;
+    float: left;
+    padding:0;
+}
+#nav-primary li {
+    float: left;
+    position: relative;
+}
+#nav-primary li a {
+    float: left;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    height: 48px;
+    padding-top: 19px;
+    line-height: 16px;
+    width: 164px;
+    text-decoration:none;
+}
+#nav-primary li a:hover {
+    text-decoration:none;
+}
+#nav-primary li:hover .subnav {
+    display: block;
+}
 
             /* navigation links*/
             #navbar li a {
